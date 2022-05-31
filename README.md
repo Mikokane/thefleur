@@ -1,5 +1,6 @@
 ## IMPORTANT: Problème technique
 Suite à des dossiers corrompus j'ai du migré la BDD sur "MySQL" (donc plus de MariaDB comme annoncé sur le dossier). Pour le bon fonctionnement du site La Fleur merci d'installer la BDD sur "MySQL".
+De plus le site "La Fleur" n'a pas pu être installer dans un environnement viable et stable sur le post A3306 de la salle  Salle A33 .
 Merci de votre compréhension.
 
 ## Getting Started
@@ -20,4 +21,5 @@ Database Configuration
 ```
 
 
-## Landon Fanny
+## Authors
+Landon Fanny
