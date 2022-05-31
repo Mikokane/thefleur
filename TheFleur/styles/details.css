@@ -1,0 +1,120 @@
+section {
+    display: block;
+}
+
+.zone-products{
+    
+/*    min-height: 1550px;*/
+    background: white;
+}
+
+.detail-prod{
+    min-height: 65vh;
+/*    min-height: 100px;*/
+}
+/*Start Zone image*/
+.detail-img{
+    
+    float: left;
+    margin: 0;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+.img-prod{
+    max-height: 80%
+}
+/*End Zone image*/
+/*Start Zone Info*/
+.detail-info{
+    position: relative;
+}
+.detail-detail{
+}
+    /*Start Select quantité*/
+.select-style {
+    float: right;
+    margin-right: 5%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select-style:after {
+    top: 50%;
+    left: 85%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+.select-style select:focus {
+    outline: none;
+}
+    /*End Select quantité*/
+.detail-garanti-fraicheur{
+        float: left;
+        float: bottom;
+        max-width: 30%;
+}
+    
+.btn-ajout-panier {position:  absolute;
+    right: 3%;
+    bottom: 3%;
+    margin-right: 5%;
+    background-color: #4FBFA8; /*bleu turquoise */
+    border: none;
+    color: white;
+padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.btn-ajout-panier:active {
+
+  background-color: #4FBFA9; /*bleu turquoise */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*End Zone Info*/
+
+/*Start Zone description*/
+.detail-prod-desc{
+/*    margin-top: 1500px;*/
+    background: pink;
+}
+/*End Zone description*/
+
+/*Start Zone ..*/
+/*End Zone ...*/

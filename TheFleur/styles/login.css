@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home-container {
+    min-height: 100vh;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 40px;
+    overflow: hidden;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.nav-links a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+}
+
+.nav-links a:hover {
+    transform: translateY(-100%);
+}
+
+.burger {
+    display: none;
+}
+
+.connexion
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: transform 0.4s;
+}
+
+#formconnexion{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#formconnexion h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+
+
+.footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.copyrights {
+    padding-right: 20px;
+}
+
+.conditions {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .burger-container {
+        width: 35px;
+        height: 30px;
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: background 0.4s;
+    }
+
+    .burger-container.active .burger {
+        background: transparent;
+    }
+
+    .burger::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        bottom: 8px;
+        transition: transform 0.4s,
+            bottom 0.4s,
+            background 0.4s;
+    }
+
+    .burger-container.active .burger::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        background: black;
+    }
+
+    .burger::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        top: 8px;
+        transition: transform 0.4s,
+            top 0.4s background 0.4s;
+    }
+
+    .burger-container.active .burger::after {
+        top: 0;
+        transform: rotate(45deg);
+        background: black;
+    }
+
+    .nav-links {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: white;
+        left: 0;
+        top: -50vh;
+        transition: top 0.4s ease-in-out;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0 50px;
+    }
+
+    .nav-links.active {
+        top: 0;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        color: black;
+        font-size: 30px;
+    }
+}
+
