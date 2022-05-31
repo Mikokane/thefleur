@@ -15,7 +15,7 @@ Database Configuration
 - Put this file inside “C:\wamp64\www” .
 - Open phpmyadmin
 - Create Database named “fleur_store”. /!\ "MySQL" /!\
-- Import database : /fleur.sql   /!\ "MySQL" /!\
+- Import database : /fleur_store.sql   /!\ "MySQL" /!\
 - Open Your browser put inside URL: "http://localhost/TheFleur/”
 - To Login as admin : ///
 ```
